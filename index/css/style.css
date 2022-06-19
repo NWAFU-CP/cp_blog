@@ -11,7 +11,7 @@ a:hover{
     transition: 0.3s;
 }
 .full-bg{
-    background-image: url(https://fastly.jsdelivr.net/gh/NWAFU-CP/.github/logo/no3building.png);
+    background-image: url(https://fastly.jsdelivr.net/gh/NWAFU-CP/cp_blog/index/img/no3building.webp);
     position:fixed;
     top: 0;
     left: 0;
@@ -158,7 +158,7 @@ a:hover{
 
 @media(max-width:850px) {
     .full-bg{
-        background-image: url(https://fastly.jsdelivr.net/gh/NWAFU-CP/.github/logo/no3building-ph.png);
+        background-image: url(https://fastly.jsdelivr.net/gh/NWAFU-CP/cp_blog/index/img/no3building-ph1.webp);
 
     }
 
