@@ -11,12 +11,12 @@ a:hover{
     transition: 0.3s;
 }
 .full-bg{
+    background-image: url(https://fastly.jsdelivr.net/gh/NWAFU-CP/.github/logo/no3building.png);
     position:fixed;
     top: 0;
     left: 0;
     width:100%;
     height:100%;
-    min-width: 1000px;
     z-index:-10;
     zoom: 1;
     background-color: #fff;
@@ -41,7 +41,7 @@ a:hover{
 .container {
     margin-top: 150px;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     position: relative;
     z-index: 1;
     display: flex;
@@ -89,11 +89,12 @@ a:hover{
 .foot-bar{
     margin-top: 100px;
     /*width: 100%;*/
-    height: 300px;
+
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 10px;
+    margin-bottom: 60px;
 }
 
 .bef-flink{
@@ -132,4 +133,40 @@ a:hover{
 .foo a{
     line-height: 20px;
     text-decoration: underline;
+}
+
+#waline{
+    margin-right: 20%;
+    margin-left: 20%;
+    background: rgba(255,255,255,0.9);
+    padding: 20px;
+    border-radius: 15px;
+
+}
+.bk2top{
+    text-align: center;
+    line-height: 50px;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    background: rgba(0, 109, 57, 1);
+    border-radius: 50%;
+    color: #fff;
+}
+
+@media(max-width:850px) {
+    .full-bg{
+        background-image: url(https://fastly.jsdelivr.net/gh/NWAFU-CP/.github/logo/no3building-ph.png);
+
+    }
+
+    #waline {
+        margin-right: 5px;
+        margin-left: 5px;
+        background: rgba(255, 255, 255, 0.9);
+        padding: 20px;
+        border-radius: 15px;
+    }
 }

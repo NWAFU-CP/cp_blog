@@ -8,9 +8,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://use.fontawesome.com/28d646b276.js"></script>
+    <script src="https://unpkg.com/@waline/client@v2/dist/waline.js"></script>
+    <link
+            rel="stylesheet"
+            href="https://unpkg.com/@waline/client@v2/dist/waline.css"
+    />
+    <script src="https://fastly.jsdelivr.net/gh/yzyyz1387/blogimages/goto.js"></script>
 <body>
 
-<div class="full-bg" style="background-image: url(https://fastly.jsdelivr.net/gh/NWAFU-CP/.github/logo/no3building.png);">
+<div class="full-bg" id="top">
     <div class="full-bg-cover"></div>
 
 </div>
@@ -31,10 +37,16 @@
             <a href="./404.html" title="博客文章"  class="card-item" target="_blank">
                 <i class="fa fa-paper-plane fa-3x fa-fw" aria-hidden="true"></i>
             </a>
+            <a onclick="javascript:scroller('waline', 800);" title="留言"  class="card-item">
+                <i class="fa fa-comments fa-3x fa-fw" aria-hidden="true"></i>
+            </a>
         </div>
     </div>
 
 </div>
+    <div id="waline"></div>
+
+
 <div class="foot-bar">
     <div class="bef-flink">
         <p>友情链接：</p>
@@ -51,6 +63,9 @@
 
 </body>
 <footer>
+    <div class="bk2top" onclick="javascript:scroller('top', 800);">
+        <i class="fa fa-arrow-up fa-1x fa-fw" aria-hidden="true"></i>
+    </div>
     <script src="https://cdn.jsdelivr.net/gh/yzyyz1387/blogimages/hhh/yinhua.js"></script>
     <script language="javascript" type="text/javascript" src="https://cdn.staticfile.org/jquery/1.7.2/jquery.min.js"></script>
     <script type="text/javascript">
@@ -105,4 +120,14 @@
 
     </div>
 </footer>
-</html>
+<script>
+    Waline.init({
+        el: '#waline',
+        serverURL: 'https://cpc.nwafu.icu',
+        emoji:[
+            '//unpkg.com/@waline/emojis@1.0.1/alus',
+            '//unpkg.com/@waline/emojis@1.0.1/tieba'
+    ]
+    })
+
+</script></html>
