@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>西农开发者联盟</title>
+    <meta name="keywords" content="西农开发者联盟">
+    <meta name="description" content="西农开发者联盟">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://use.fontawesome.com/28d646b276.js"></script>
+<body>
+
+<div class="full-bg" style="background-image: url(https://fastly.jsdelivr.net/gh/NWAFU-CP/.github/logo/no3building.png);">
+    <div class="full-bg-cover"></div>
+
+</div>
+<div class="container">
+    <div class="logo_div">
+        <img src="https://fastly.jsdelivr.net/gh/NWAFU-CP/.github/logo/nwafucp1.png" alt="">
+    </div>
+    <div class="title">
+        <h1>ops: 404 Not fOUND</h1>
+        <h2>你好像迷路了</h2>
+        <div class="card">
+            <a href="https://github.com/NWAFU-CP" title="首页" class="card-item">
+                <i class="fa fa-home fa-3x fa-fw" aria-hidden="true"></i>
+            </a>
+
+        </div>
+    </div>
+
+</div>
+
+
+</body>
+<footer>
+    <script src="https://cdn.jsdelivr.net/gh/yzyyz1387/blogimages/hhh/yinhua.js"></script>
+    <script language="javascript" type="text/javascript" src="https://cdn.staticfile.org/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript">
+        let a_idx = 0;
+        jQuery(document).ready(function($) {
+            $("body").click(function(e) {
+                const a = ["C++", "C", "Python", "JavaScript", "Golang", "Java", "print()", "console.log()", "System.out.println()", "printf()", "HelloWorld", "i++", "++i", ":=", "418", "404", "500", "Syntax error", "ValueError", "FileNotFoundError", "AttribteError", "invalid syntax", "utf-8", "gb2312", "*(#&%(*@&(#*%*/*#%/@-"];
+                const $i = $("<span/>").text(a[a_idx]);
+                a_idx = (a_idx + 1) % a.length;
+                const x = e.pageX,
+                    y = e.pageY;
+
+                $i.css({
+                    "z-index": 9999999999999,
+                    "top": y - 20,
+                    "left": x,
+                    "position": "absolute",
+                    "font-weight": "bold",
+                    "color": "#fff"
+                });
+                $("body").append($i);
+                $i.animate({
+                        "top": y - 180,
+                        "opacity": 0
+                    },
+                    1500,
+                    function() {
+                        $i.remove();
+                    });
+            });
+        });
+    </script>
+    <div class="foo">
+        <script type="text/javascript">
+            copyright=new Date();
+            update=copyright.getFullYear();
+            if (update!==2022){document.write("Copyright © 2022-"+ update + ' nwafu.icu All rights reserved. ');}
+            else {document.write("Copyright © 2022"+ ' nwafu.icu All rights reserved. ');}
+        </script>
+
+    </div>
+</footer>
+</html>
